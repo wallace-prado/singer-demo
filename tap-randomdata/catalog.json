@@ -1,0 +1,502 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "vehicle",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "uid": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "vin": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "make_and_model": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "color": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "transmission": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "drive_type": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "fuel_type": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "car_type": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "car_options": {
+            "items": {
+              "anyOf": [
+                {
+                  "$id": "#/properties/car_options/items/anyOf/0",
+                  "type": "string",
+                  "title": "The first anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "Power Locks",
+                    "Alloy Wheels"
+                  ]
+                }
+              ]
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "array"
+          },
+          "specs": {
+            "items": {
+              "anyOf": [
+                {
+                  "$id": "#/properties/specs/items/anyOf/0",
+                  "type": "string",
+                  "title": "The first anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "Torsion beam rear suspension w/stabilizer bar",
+                    "6.1L SRT V8 \"Hemi\" engine"
+                  ]
+                }
+              ]
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "array"
+          },
+          "doors": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "mileage": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "kilometrage": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "license_plate": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "vehicle",
+      "metadata": []
+    },
+    {
+      "tap_stream_id": "company",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "uid": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "business_name": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "suffix": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "industry": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "catch_phrase": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "buzzword": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "bs_company_statement": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "employee_identification_number": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "duns_number": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "logo": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "type": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "phone_number": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "full_address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "latitude": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          },
+          "longitude": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "company",
+      "metadata": []
+    },
+    {
+      "tap_stream_id": "food",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "uid": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "dish": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "description": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "ingredient": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "measurement": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "food",
+      "metadata": []
+    },
+    {
+      "tap_stream_id": "restaurant",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "uid": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "name": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "type": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "description": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "review": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "logo": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "phone_number": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "hours": {
+            "properties": {
+              "monday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "tuesday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "wednesday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "thursday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "friday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "saturday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": true
+              },
+              "sunday": {
+                "properties": {
+                  "opens_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "closes_at": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "string"
+                  },
+                  "is_closed": {
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "boolean"
+                  }
+                },
+                "description": "An explanation about the purpose of this instance.",
+                "type": "object",
+                "additionalProperties": false
+              }
+            },
+            "description": "An explanation about the purpose of this instance.",
+            "type": "object",
+            "additionalProperties": false
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "restaurant",
+      "metadata": []
+    },
+    {
+      "tap_stream_id": "address",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "uid": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "street_name": {
+            "type": "string"
+          },
+          "street_address": {
+            "type": "string"
+          },
+          "secondary_address": {
+            "type": "string"
+          },
+          "building_number": {
+            "type": "string"
+          },
+          "mail_box": {
+            "type": "string"
+          },
+          "community": {
+            "type": "string"
+          },
+          "zip_code": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "postcode": {
+            "type": "string"
+          },
+          "time_zone": {
+            "type": "string"
+          },
+          "street_suffix": {
+            "type": "string"
+          },
+          "city_suffix": {
+            "type": "string"
+          },
+          "city_prefix": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "state_abbr": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "country_code": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "full_address": {
+            "type": "string"
+          }
+        },
+        "selected": true,
+        "type": [
+          "object",
+          "null"
+        ],
+        "additionalProperties": false
+      },
+      "stream": "address",
+      "metadata": []
+    }
+  ],
+  "metadata": [
+    {
+      "metadata": {
+        "selected": true
+      },
+      "breadcrumb": []
+    }]  
+}

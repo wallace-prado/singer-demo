@@ -1,0 +1,128 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "address",
+      "key_properties": [],
+      "schema": {
+        "properties": {
+          "id": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "integer"
+          },
+          "uid": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "city": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "street_name": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "street_address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "secondary_address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "building_number": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "mail_box": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "community": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "zip_code": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "zip": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "postcode": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "time_zone": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "street_suffix": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "city_suffix": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "city_prefix": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "state": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "state_abbr": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "country": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "country_code": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          },
+          "latitude": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          },
+          "longitude": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "number"
+          },
+          "full_address": {
+            "description": "An explanation about the purpose of this instance.",
+            "type": "string"
+          }
+        },
+        "description": "The root schema comprises the entire JSON document.",
+        "type": "object",
+        "additionalProperties": true
+      },
+      "stream": "address",
+      "metadata": [
+        {
+          "metadata": {
+            "inclusion": "automatic",
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": true,
+            "schema-name": "address"
+          },
+          "breadcrumb": []
+        },
+        {
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          },
+          "breadcrumb": ["properties", "country"]
+        }
+      ]
+    }
+  ]
+}
