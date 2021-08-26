@@ -3,6 +3,7 @@ name = "tap-randomdata"
 version = "0.1.0"
 description = "tap to generate random data from https://random-data-api.com/"
 authors = ["Wallace Prado <wprado@gmail.com>"]
+repository = "https://github.com/wallace-prado/singer-demo"
 
 [tool.poetry.dependencies]
 python = "^3.8"
