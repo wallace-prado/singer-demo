@@ -10,4 +10,4 @@ This Demo Project to implement Singer Taps and/or Singer Targets
 
 ## Singer Target
 
-[EMPTY]
+- [Local JSON](target-localjson/README.md)
